@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Decor Website</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="header">
+            <a href="#"><img src="Images\RIA2.png" class="logo" alt=""></a>
+            
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="kitchen.html">Kitchen</a></li>
+                    <li><a href="decor.html">Decor</a></li>
+                    <li><a href="bath.html">Bath</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="active" href="cart.html"><i class="fal fa-shopping-bag"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="cart-page">
+            <h2>Shopping Cart</h2>
+        </section>
+
+        <!--div class="card">
+            <ul class="listcard"></ul>
+            <div class="checkout">
+                <div class="total">0</div>
+                <div class="closeshopping">Close</div>
+            </div>
+        </div-->
+        <section id="cart" class="section-p1">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <script>
+                            var close = document.getElementsByClassName("closebtn");
+                            var i;
+                            
+                            for (i = 0; i < close.length; i++) {
+                              close[i].onclick = function(){
+                                var div = this.parentElement;
+                                div.style.opacity = "0";
+                                setTimeout(function(){ div.style.display = "none"; }, 600);
+                              }
+                            }
+                            </script>
+                            </tr>
+                            </tbody>
+                        <!--td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="Images/decor/Crystal Tissue Box.webp" alt=""></td>
+                        <td>Crystal Tissue Box</td>
+                        <td>$12</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$12</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="Images/bath/Liquid Soap Holder.webp" alt=""></td>
+                        <td>Liquid Soap Holder</td>
+                        <td>$13</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$13</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="Images/kitchen/Ceramic Baking Dish Long.webp" alt=""></td>
+                        <td>Ceramic Baking Dish Long</td>
+                        <td>$12</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$12</td>
+                    </tr>
+                </tbody-->
+            </table>
+        </section>
+        
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Apply Coupon</h3>
+                <div>
+                    <input type="text" placeholder="Enter Your Coupon">
+                    <button class="normal">Apply</button>
+                </div>
+            </div>
+
+            <div id="subtotal">
+                <h3>Cart Totals</h3>
+                <table>
+                    <tr>
+                        <td>Cart Subtotal</td>
+                        <td>$37.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>$37.00</strong></td>
+                    </tr>
+                </table>
+                <button class="normal">Proceed to checkout</button>
+            </div>
+        </section>
+        
+        <footer class="section-p1">
+            <div class="col">
+               <img class="logo1" src="Images/RIA2.png" alt="">
+               <h4>Contact</h4>
+               <p><strong>Address:</strong> 564 Wellington Road, Street 32, San Francisco</p>
+               <p><strong>Phone:</strong> +81 2222 365/(+91) 01 2345 7564</p>
+               <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+               <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="Images/pay/pay1.png" alt="">
+                    <img src="Images/pay/pay2.png" alt="">
+                </div>
+                <p>Secured Payment Gateways </p>
+                <img src="Images/pay/pay4.png" alt="">
+            </div>
+
+            <div class="copyright">
+                <p>Home Decor project - Using HTML, CSS</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
